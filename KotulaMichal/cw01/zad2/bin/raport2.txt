@@ -1,0 +1,17 @@
+Test: zadanie2
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.020000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.010000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.010000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.010000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.010000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.030000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.030000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.000000s, User time: 0.000000s, System time: 0.000000s
+Real time: 0.210000s, User time: 0.000000s, System time: 0.000000s

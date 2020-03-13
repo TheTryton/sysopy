@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="diff_library_shared" targetName="diff_library_shared" />
+      <config projectName="diff_library_shared" targetName="diff_library_static" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f9f5fec-e913-4f17-9955-ba9590e655fe" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1YfwCE5IVzeBq9dmdtRYwgZoxVu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/diff" />
+      <recent name="$PROJECT_DIR$/include/diff" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.diff_library_static">
+    <configuration name="diff_library_shared" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="diff_library_shared" TARGET_NAME="diff_library_shared" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="diff_library_static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="diff_library_shared" TARGET_NAME="diff_library_static" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.diff_library_shared" />
+      <item itemvalue="CMake Application.diff_library_static" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f9f5fec-e913-4f17-9955-ba9590e655fe" name="Default Changelist" comment="" />
+      <created>1583346829373</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583346829373</updated>
+      <workItem from="1583346843522" duration="6896000" />
+      <workItem from="1583355418543" duration="4171000" />
+      <workItem from="1583400901562" duration="8955000" />
+      <workItem from="1583418836461" duration="212000" />
+      <workItem from="1583419148159" duration="14000" />
+      <workItem from="1583420680151" duration="1425000" />
+      <workItem from="1583612784550" duration="4210000" />
+      <workItem from="1583705684910" duration="1623000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="158" width="800" height="677" key="#New_File_Extensions" timestamp="1583402979793">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="137" y="158" key="#New_File_Extensions/67.27.1853.948@67.27.1853.948" timestamp="1583402979793" />
+    <state x="100" y="157" width="800" height="677" key="#New_File_Extensions/67.27.877.939@67.27.877.939" timestamp="1583346933177" />
+    <state x="67" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583401786669">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="67" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.948@67.27.1853.948" timestamp="1583401786669" />
+    <state x="428" y="246" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583401043276">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="428" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.948@67.27.1853.948" timestamp="1583401043276" />
+    <state x="238" y="244" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.877.939@67.27.877.939" timestamp="1583347362848" />
+    <state x="303" y="219" width="642" height="553" key="#diff_library_shared" timestamp="1583353799585">
+      <screen x="67" y="27" width="1125" height="939" />
+    </state>
+    <state x="303" y="219" width="642" height="553" key="#diff_library_shared/67.27.1125.939@67.27.1125.939" timestamp="1583353799585" />
+    <state x="67" y="219" width="642" height="553" key="#diff_library_static" timestamp="1583362162615">
+      <screen x="67" y="27" width="1125" height="939" />
+    </state>
+    <state x="67" y="219" width="642" height="553" key="#diff_library_static/67.27.1125.939@67.27.1125.939" timestamp="1583362162615" />
+    <state x="191" y="136" key="SettingsEditor" timestamp="1583404071212">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="191" y="136" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1583404071212" />
+    <state x="266" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1583705684941">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="266" y="326" key="com.intellij.ide.util.TipDialog/67.27.1853.948@67.27.1853.948" timestamp="1583705684941" />
+    <state x="161" y="323" key="com.intellij.ide.util.TipDialog/67.27.877.939@67.27.877.939" timestamp="1583346843967" />
+  </component>
+</project>

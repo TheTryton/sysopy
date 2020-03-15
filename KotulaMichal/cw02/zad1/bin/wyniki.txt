@@ -1,0 +1,192 @@
+copy 1000 1 sys:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 4 sys:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 512 sys:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 1024 sys:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 4096 sys:
+real 0.01
+user 0.00
+sys 0.00
+copy 1000 8192 sys:
+real 0.01
+user 0.00
+sys 0.00
+copy 4000 1 sys:
+real 0.01
+user 0.00
+sys 0.01
+copy 4000 4 sys:
+real 0.00
+user 0.00
+sys 0.00
+copy 4000 512 sys:
+real 0.01
+user 0.00
+sys 0.01
+copy 4000 1024 sys:
+real 0.01
+user 0.00
+sys 0.00
+copy 4000 4096 sys:
+real 0.04
+user 0.02
+sys 0.01
+copy 4000 8192 sys:
+real 0.04
+user 0.02
+sys 0.01
+copy 1000 1 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 4 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 512 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 1024 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 1000 4096 lib:
+real 0.01
+user 0.00
+sys 0.00
+copy 1000 8192 lib:
+real 0.01
+user 0.00
+sys 0.00
+copy 4000 1 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 4000 4 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 4000 512 lib:
+real 0.00
+user 0.00
+sys 0.00
+copy 4000 1024 lib:
+real 0.01
+user 0.00
+sys 0.00
+copy 4000 4096 lib:
+real 0.04
+user 0.03
+sys 0.01
+copy 4000 8192 lib:
+real 0.04
+user 0.03
+sys 0.00
+sort 1000 1 sys:
+real 0.10
+user 0.03
+sys 0.06
+sort 1000 4 sys:
+real 0.04
+user 0.00
+sys 0.03
+sort 1000 512 sys:
+real 0.04
+user 0.01
+sys 0.02
+sort 1000 1024 sys:
+real 0.04
+user 0.01
+sys 0.02
+sort 1000 4096 sys:
+real 0.05
+user 0.02
+sys 0.02
+sort 1000 8192 sys:
+real 0.07
+user 0.02
+sys 0.04
+sort 4000 1 sys:
+real 1.51
+user 0.40
+sys 1.07
+sort 4000 4 sys:
+real 0.16
+user 0.04
+sys 0.11
+sort 4000 512 sys:
+real 0.19
+user 0.04
+sys 0.14
+sort 4000 1024 sys:
+real 0.19
+user 0.07
+sys 0.11
+sort 4000 4096 sys:
+real 0.27
+user 0.05
+sys 0.22
+sort 4000 8192 sys:
+real 0.34
+user 0.10
+sys 0.24
+sort 1000 1 lib:
+real 0.65
+user 0.21
+sys 0.43
+sort 1000 4 lib:
+real 0.03
+user 0.02
+sys 0.01
+sort 1000 512 lib:
+real 0.05
+user 0.02
+sys 0.02
+sort 1000 1024 lib:
+real 0.06
+user 0.01
+sys 0.04
+sort 1000 4096 lib:
+real 0.05
+user 0.02
+sys 0.02
+sort 1000 8192 lib:
+real 0.06
+user 0.02
+sys 0.04
+sort 4000 1 lib:
+real 10.72
+user 3.98
+sys 6.69
+sort 4000 4 lib:
+real 0.17
+user 0.04
+sys 0.11
+sort 4000 512 lib:
+real 0.33
+user 0.08
+sys 0.24
+sort 4000 1024 lib:
+real 0.29
+user 0.12
+sys 0.17
+sort 4000 4096 lib:
+real 0.22
+user 0.08
+sys 0.13
+sort 4000 8192 lib:
+real 0.33
+user 0.08
+sys 0.24

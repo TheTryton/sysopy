@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tester"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/matrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix/fast">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/matrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/libcommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 common"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common/fast">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/libcommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 common/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="child">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/child" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 child"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="child/fast">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/child" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 child/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tester">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tester"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tester/fast">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tester/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generator">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/generator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 generator"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generator/fast">
+				<Option output="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin/generator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 generator/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/src/child.c">
+			<Option target="child"/>
+		</Unit>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/src/common.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/src/generator.c">
+			<Option target="generator"/>
+		</Unit>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/src/main.c">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/src/tester.c">
+			<Option target="tester"/>
+		</Unit>
+		<Unit filename="/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

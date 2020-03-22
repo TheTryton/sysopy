@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/generator.dir/src/generator.c.o  -o ../bin/generator ../bin/libcommon.a -lm 

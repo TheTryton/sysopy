@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66227acc-b49a-4a32-9a00-84ed829a6b2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="zad1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="copy dane1a daneaaa 1000 1 sys" PASS_PARENT_ENVS_2="true" PROJECT_NAME="zad1" TARGET_NAME="zad1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="zad1" RUN_TARGET_NAME="zad1">
+    <configuration name="zad1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="sort dane 5 25 sys" PASS_PARENT_ENVS_2="true" PROJECT_NAME="zad1" TARGET_NAME="zad1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="zad1" RUN_TARGET_NAME="zad1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -61,6 +59,7 @@
       <workItem from="1584135225053" duration="2111000" />
       <workItem from="1584138824122" duration="210000" />
       <workItem from="1584139142336" duration="227000" />
+      <workItem from="1584467127502" duration="346000" />
     </task>
     <servers />
   </component>
@@ -68,26 +67,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="331" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584139188242">
+    <state x="439" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584467331771">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state x="331" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1584139188242" />
-    <state width="1354" height="389" key="GridCell.Tab.0.bottom" timestamp="1584139369682">
+    <state x="439" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1584467331771" />
+    <state width="1396" height="263" key="GridCell.Tab.0.bottom" timestamp="1584467473355">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state width="1354" height="389" key="GridCell.Tab.0.bottom/67.27.1613.1023@67.27.1613.1023" timestamp="1584139369682" />
-    <state width="1354" height="389" key="GridCell.Tab.0.center" timestamp="1584139369681">
+    <state width="1396" height="263" key="GridCell.Tab.0.bottom/67.27.1613.1023@67.27.1613.1023" timestamp="1584467473355" />
+    <state width="1396" height="263" key="GridCell.Tab.0.center" timestamp="1584467473350">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state width="1354" height="389" key="GridCell.Tab.0.center/67.27.1613.1023@67.27.1613.1023" timestamp="1584139369681" />
-    <state width="1354" height="389" key="GridCell.Tab.0.left" timestamp="1584139369680">
+    <state width="1396" height="263" key="GridCell.Tab.0.center/67.27.1613.1023@67.27.1613.1023" timestamp="1584467473350" />
+    <state width="1396" height="263" key="GridCell.Tab.0.left" timestamp="1584467473347">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state width="1354" height="389" key="GridCell.Tab.0.left/67.27.1613.1023@67.27.1613.1023" timestamp="1584139369680" />
-    <state width="1354" height="389" key="GridCell.Tab.0.right" timestamp="1584139369682">
+    <state width="1396" height="263" key="GridCell.Tab.0.left/67.27.1613.1023@67.27.1613.1023" timestamp="1584467473347" />
+    <state width="1396" height="263" key="GridCell.Tab.0.right" timestamp="1584467473352">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state width="1354" height="389" key="GridCell.Tab.0.right/67.27.1613.1023@67.27.1613.1023" timestamp="1584139369682" />
+    <state width="1396" height="263" key="GridCell.Tab.0.right/67.27.1613.1023@67.27.1613.1023" timestamp="1584467473352" />
     <state width="1354" height="389" key="GridCell.Tab.1.bottom" timestamp="1584139369685">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
@@ -104,10 +103,10 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state width="1354" height="389" key="GridCell.Tab.1.right/67.27.1613.1023@67.27.1613.1023" timestamp="1584139369684" />
-    <state x="418" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584139141950">
+    <state x="418" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584467126537">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="333" y="310" key="com.intellij.ide.util.TipDialog/67.27.1221.913@67.27.1221.913" timestamp="1583860919034" />
-    <state x="418" y="344" key="com.intellij.ide.util.TipDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1584139141950" />
+    <state x="418" y="344" key="com.intellij.ide.util.TipDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1584467126537" />
   </component>
 </project>

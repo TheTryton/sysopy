@@ -1,0 +1,7 @@
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/matrix.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/common.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/child.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/tester.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw03/zad3/cmake-build-debug/CMakeFiles/generator.dir

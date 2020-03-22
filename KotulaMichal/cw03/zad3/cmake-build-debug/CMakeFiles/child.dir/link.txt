@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/child.dir/src/child.c.o  -o ../bin/child ../bin/libcommon.a -lm 

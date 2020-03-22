@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/matrix.dir/src/main.c.o  -o ../bin/matrix ../bin/libcommon.a -lm 

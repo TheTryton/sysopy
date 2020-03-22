@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/tester.dir/src/tester.c.o  -o ../bin/tester ../bin/libcommon.a -lm 

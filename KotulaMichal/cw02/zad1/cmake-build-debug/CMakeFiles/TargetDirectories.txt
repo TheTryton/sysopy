@@ -1,3 +1,0 @@
-/home/michal/Desktop/operating_systems/KotulaMichal/cw02/zad1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/michal/Desktop/operating_systems/KotulaMichal/cw02/zad1/cmake-build-debug/CMakeFiles/zad1.dir
-/home/michal/Desktop/operating_systems/KotulaMichal/cw02/zad1/cmake-build-debug/CMakeFiles/edit_cache.dir

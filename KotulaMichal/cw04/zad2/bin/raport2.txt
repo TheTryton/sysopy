@@ -1,0 +1,10 @@
+fork:
+	ignore -> ignoruje i w przodku i w potomku (sprawdzane na SIGINT w celu jakiejkolwiek reakcji procesu na sygnal)
+	handler -> wywoluje sie i w przodku i potomku
+	mask -> maska jest dziedziczona wiec sygnal oczekuje i w przodku i potomku
+	pending -> sygnal oczekujacy w przodku nie jest widoczny w potomku
+exec:
+	ignore -> ignoruje i w przodku i w potomku (sprawdzane na SIGINT w celu jakiejkolwiek reakcji procesu na sygnal)
+	handler -> wywoluje sie tylko w przodku
+	mask -> maska jest dziedziczona wiec sygnal oczekuje i w przodku i potomku
+	pending -> sygnal oczekujacy w przodku nie jest widoczny w potomku

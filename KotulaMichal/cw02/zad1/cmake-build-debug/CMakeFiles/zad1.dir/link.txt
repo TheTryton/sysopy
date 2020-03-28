@@ -1,1 +1,0 @@
-/usr/bin/cc -Wall -g   CMakeFiles/zad1.dir/src/main.c.o  -o ../bin/zad1 

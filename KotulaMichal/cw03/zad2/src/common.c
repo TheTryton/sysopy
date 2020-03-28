@@ -175,6 +175,8 @@ multiplication_triples load_multiplication_triples(int file_handle)
         strcpy(mts.triples[i].c, c);
     }
 
+    free(file);
+
     return mts;
 }
 void free_multiplication_triples(multiplication_triples* mt) {

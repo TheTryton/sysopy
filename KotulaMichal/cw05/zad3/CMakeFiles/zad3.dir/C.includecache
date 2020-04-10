@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/src/main.c
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+sys/wait.h
+-
+

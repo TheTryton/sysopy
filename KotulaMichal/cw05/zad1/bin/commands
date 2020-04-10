@@ -1,0 +1,5 @@
+echo "ala ma kota" | wc -w
+cat commands | wc -l
+cat commands | wc -w
+cat commands | tail -n 2 | wc -w
+

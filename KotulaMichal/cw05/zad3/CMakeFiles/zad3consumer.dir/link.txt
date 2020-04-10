@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/zad3consumer.dir/src/consumer.c.o  -o bin/zad3consumer 

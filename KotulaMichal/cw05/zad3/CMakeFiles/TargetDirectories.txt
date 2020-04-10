@@ -1,0 +1,5 @@
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/CMakeFiles/edit_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/CMakeFiles/rebuild_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/CMakeFiles/zad3.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/CMakeFiles/zad3producer.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw05/zad3/CMakeFiles/zad3consumer.dir

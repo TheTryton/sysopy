@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/common/common.h
+stdbool.h
+-
+mqueue.h
+-
+sys/types.h
+-
+time.h
+-
+errno.h
+-
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+signal.h
+-
+
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/src/client.c
+common/common.h
+-
+

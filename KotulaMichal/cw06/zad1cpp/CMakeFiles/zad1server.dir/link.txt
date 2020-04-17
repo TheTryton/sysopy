@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/zad1server.dir/src/server.c.o  -o /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1c/bin/zad1server 

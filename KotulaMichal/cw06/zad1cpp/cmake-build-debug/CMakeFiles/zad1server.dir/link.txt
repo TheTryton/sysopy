@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/zad1server.dir/src/server.cpp.o  -o ../bin/zad1server  ../bin/libcommon.a 

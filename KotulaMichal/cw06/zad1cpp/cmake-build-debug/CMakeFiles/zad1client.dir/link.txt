@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/zad1client.dir/src/client.cpp.o  -o ../bin/zad1client  ../bin/libcommon.a 

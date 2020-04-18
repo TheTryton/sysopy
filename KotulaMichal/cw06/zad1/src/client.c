@@ -73,7 +73,7 @@ void receive(union sigval sv)
     (void) sv;
     message msg;
 
-    if(peek_message(client_queue, msg))
+    while(peek_message(client_queue, msg))
     {
         error_code error;
         switch(msg.mtype)

@@ -86,7 +86,7 @@ void on_message_available(union sigval sv)
 
     message msg;
 
-    if(receive_message(client_queue, msg))
+    while(receive_message(client_queue, msg))
     {
         error_code error;
         switch(msg.mtype)

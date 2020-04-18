@@ -54,8 +54,8 @@ error_code disconnect(host_id_t client_id)
 
 error_code connect(host_id_t client_id, host_id_t target_id)
 {
-    client* c1;
-    client* c2;
+    client* c1 = NULL;
+    client* c2 = NULL;
     for(size_t i=0;i<MAX_CLIENTS_COUNT;i++) {
         if (clients[i].id == client_id) {
             c1 = clients + i;
@@ -153,7 +153,7 @@ define_handler(LIST_REQUEST)
             qid = clients[i].queue;
         }
     }
-    msgsnd(qid, &msg_res, sizeof(msg_res), 0);
+    msgsnd(qid, &msg_res, sizeof(msg_res) - sizeof(long), 0);
     return OK;
 }
 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/common/common.h
+stdbool.h
+-
+sys/ipc.h
+-
+sys/msg.h
+-
+sys/types.h
+-
+errno.h
+-
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+signal.h
+-
+time.h
+-
+
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1/src/server.c
+common/common.h
+-
+

@@ -11,12 +11,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <signal.h>
+#include <time.h>
 
 #define SERVER_KEY_PATHNAME "/home/michal/"
 #define PROJECT_ID 'S'
 
 #define MAX_CLIENTS_COUNT 10
 #define QUEUE_PERMISSIONS 0640
+#define MAX_TEXT_LENGTH 128
 
 typedef int queue_id_t;
 typedef int host_id_t;
@@ -30,7 +32,8 @@ typedef enum message_type
     CONNECT_REQUEST = 6,
     CONNECT_REPLY = 7,
     INIT = 8,
-    INIT_REPLY = 9
+    INIT_REPLY = 9,
+    CHAT = 10
 } message_type;
 
 typedef enum error_code {
@@ -65,18 +68,21 @@ typedef struct message
             int size;
             struct { host_id_t id; bool available;} clients[MAX_CLIENTS_COUNT];
         } list_reply;
+        struct chat {
+            char text[MAX_TEXT_LENGTH];
+        } chat;
     } data;
 } message;
 
 #define send_message(type, initializer, queue) \
 { \
     message msg = {type, {initializer}}; \
-    msgsnd(queue, &msg, sizeof(msg), 0); \
+    msgsnd(queue, &msg, sizeof(msg) - sizeof(long), 0); \
 }
 #define peek_message(queue, msg) \
-(msgrcv(queue, &msg, sizeof(msg), -20, IPC_NOWAIT) != -1)
+(msgrcv(queue, &msg, sizeof(msg) - sizeof(long), -20, IPC_NOWAIT) != -1)
 #define receive_message(queue, msg) \
-(msgrcv(queue, &msg, sizeof(msg), -20, 0) != -1)
+(msgrcv(queue, &msg, sizeof(msg) - sizeof(long), -20, 0) != -1)
 #define define_handler(msg_type) \
 error_code msg_type##_handler(message* msg)
 #define handler_case_call(msg_type, msg, error) \

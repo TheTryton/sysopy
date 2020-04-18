@@ -45,6 +45,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/zad2server.dir/DependInfo.cmake"
-  "CMakeFiles/zad2client.dir/DependInfo.cmake"
+  "CMakeFiles/zad1server.dir/DependInfo.cmake"
+  "CMakeFiles/zad1client.dir/DependInfo.cmake"
   )

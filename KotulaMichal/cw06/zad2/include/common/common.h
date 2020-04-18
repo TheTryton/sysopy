@@ -16,6 +16,7 @@
 
 #define MAX_CLIENTS_COUNT 10
 #define QUEUE_PERMISSIONS 0666
+#define MAX_TEXT_LENGTH 128
 
 typedef union{
     char code[5];
@@ -33,7 +34,8 @@ typedef enum message_type
     CONNECT_REQUEST = 7,
     CONNECT_REPLY = 8,
     INIT = 9,
-    INIT_REPLY = 10
+    INIT_REPLY = 10,
+    CHAT = 11
 } message_type;
 
 typedef enum error_code {
@@ -68,13 +70,16 @@ typedef struct message
             int size;
             struct { host_id_t id; bool available;} clients[MAX_CLIENTS_COUNT];
         } list_reply;
+        struct chat {
+            char text[MAX_TEXT_LENGTH];
+        } chat;
     } data;
 } message;
 
 #define send_message(type, initializer, queue) \
 { \
     message msg = {type, {initializer}}; \
-    mq_send(queue, (char*)&msg, sizeof(msg), type);\
+    int v = mq_send(queue, (char*)&msg, sizeof(msg), type);\
 }
 #define receive_message(queue, msg) \
 (mq_receive(queue, (char*)&msg, sizeof(msg), NULL) != -1)

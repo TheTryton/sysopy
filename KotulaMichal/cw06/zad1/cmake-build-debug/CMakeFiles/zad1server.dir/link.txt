@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/zad1server.dir/src/server.c.o  -o ../bin/zad1server  -lrt 

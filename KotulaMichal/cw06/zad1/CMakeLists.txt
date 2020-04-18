@@ -16,5 +16,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 add_executable(zad1client src/client.c ${common_includes})
 add_executable(zad1server src/server.c ${common_includes})
 
+target_link_libraries(zad1client rt)
+target_link_libraries(zad1server rt)
+
 target_include_directories(zad1client PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(zad1server PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

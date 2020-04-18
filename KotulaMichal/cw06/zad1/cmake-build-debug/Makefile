@@ -48,10 +48,10 @@ RM = /snap/clion/111/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2
+CMAKE_SOURCE_DIR = /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/cmake-build-debug/CMakeFiles /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1/cmake-build-debug/CMakeFiles /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named zad2server
+# Target rules for targets named zad1server
 
 # Build rule for target.
-zad2server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zad2server
-.PHONY : zad2server
+zad1server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zad1server
+.PHONY : zad1server
 
 # fast build rule for target.
-zad2server/fast:
-	$(MAKE) -f CMakeFiles/zad2server.dir/build.make CMakeFiles/zad2server.dir/build
-.PHONY : zad2server/fast
+zad1server/fast:
+	$(MAKE) -f CMakeFiles/zad1server.dir/build.make CMakeFiles/zad1server.dir/build
+.PHONY : zad1server/fast
 
 #=============================================================================
-# Target rules for targets named zad2client
+# Target rules for targets named zad1client
 
 # Build rule for target.
-zad2client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zad2client
-.PHONY : zad2client
+zad1client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zad1client
+.PHONY : zad1client
 
 # fast build rule for target.
-zad2client/fast:
-	$(MAKE) -f CMakeFiles/zad2client.dir/build.make CMakeFiles/zad2client.dir/build
-.PHONY : zad2client/fast
+zad1client/fast:
+	$(MAKE) -f CMakeFiles/zad1client.dir/build.make CMakeFiles/zad1client.dir/build
+.PHONY : zad1client/fast
 
 src/client.o: src/client.c.o
 
@@ -142,7 +142,7 @@ src/client.o: src/client.c.o
 
 # target to build an object file
 src/client.c.o:
-	$(MAKE) -f CMakeFiles/zad2client.dir/build.make CMakeFiles/zad2client.dir/src/client.c.o
+	$(MAKE) -f CMakeFiles/zad1client.dir/build.make CMakeFiles/zad1client.dir/src/client.c.o
 .PHONY : src/client.c.o
 
 src/client.i: src/client.c.i
@@ -151,7 +151,7 @@ src/client.i: src/client.c.i
 
 # target to preprocess a source file
 src/client.c.i:
-	$(MAKE) -f CMakeFiles/zad2client.dir/build.make CMakeFiles/zad2client.dir/src/client.c.i
+	$(MAKE) -f CMakeFiles/zad1client.dir/build.make CMakeFiles/zad1client.dir/src/client.c.i
 .PHONY : src/client.c.i
 
 src/client.s: src/client.c.s
@@ -160,7 +160,7 @@ src/client.s: src/client.c.s
 
 # target to generate assembly for a file
 src/client.c.s:
-	$(MAKE) -f CMakeFiles/zad2client.dir/build.make CMakeFiles/zad2client.dir/src/client.c.s
+	$(MAKE) -f CMakeFiles/zad1client.dir/build.make CMakeFiles/zad1client.dir/src/client.c.s
 .PHONY : src/client.c.s
 
 src/server.o: src/server.c.o
@@ -169,7 +169,7 @@ src/server.o: src/server.c.o
 
 # target to build an object file
 src/server.c.o:
-	$(MAKE) -f CMakeFiles/zad2server.dir/build.make CMakeFiles/zad2server.dir/src/server.c.o
+	$(MAKE) -f CMakeFiles/zad1server.dir/build.make CMakeFiles/zad1server.dir/src/server.c.o
 .PHONY : src/server.c.o
 
 src/server.i: src/server.c.i
@@ -178,7 +178,7 @@ src/server.i: src/server.c.i
 
 # target to preprocess a source file
 src/server.c.i:
-	$(MAKE) -f CMakeFiles/zad2server.dir/build.make CMakeFiles/zad2server.dir/src/server.c.i
+	$(MAKE) -f CMakeFiles/zad1server.dir/build.make CMakeFiles/zad1server.dir/src/server.c.i
 .PHONY : src/server.c.i
 
 src/server.s: src/server.c.s
@@ -187,7 +187,7 @@ src/server.s: src/server.c.s
 
 # target to generate assembly for a file
 src/server.c.s:
-	$(MAKE) -f CMakeFiles/zad2server.dir/build.make CMakeFiles/zad2server.dir/src/server.c.s
+	$(MAKE) -f CMakeFiles/zad1server.dir/build.make CMakeFiles/zad1server.dir/src/server.c.s
 .PHONY : src/server.c.s
 
 # Help Target
@@ -198,8 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... zad2server"
-	@echo "... zad2client"
+	@echo "... zad1server"
+	@echo "... zad1client"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"

@@ -171,6 +171,15 @@ void onexit()
         if(clients[i].queue)
         {
             send_message(STOP, { 0 }, clients[i].queue);
+            message msg;
+            while(receive_message(server_queue, msg))
+            {
+                if(msg.mtype == STOP_REPLY)
+                {
+                    printf("[Server] Client %i disconnected\n", clients[i].id);
+                    break;
+                }
+            }
         }
     }
     msgctl(server_queue, IPC_RMID, NULL);

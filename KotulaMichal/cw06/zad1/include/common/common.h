@@ -25,15 +25,16 @@ typedef int host_id_t;
 typedef enum message_type
 {
     STOP = 1,
-    DISCONNECT = 2,
-    LIST_REQUEST = 3,
-    LIST_REPLY = 4,
-    ERROR = 5,
-    CONNECT_REQUEST = 6,
-    CONNECT_REPLY = 7,
-    INIT = 8,
-    INIT_REPLY = 9,
-    CHAT = 10
+    STOP_REPLY = 2,
+    DISCONNECT = 3,
+    LIST_REQUEST = 4,
+    LIST_REPLY = 5,
+    ERROR = 6,
+    CONNECT_REQUEST = 7,
+    CONNECT_REPLY = 8,
+    INIT = 9,
+    INIT_REPLY = 10,
+    CHAT = 11
 } message_type;
 
 typedef enum error_code {

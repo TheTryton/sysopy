@@ -7,6 +7,7 @@ queue_t server_queue;
 host_id_t client_id;
 queue_t other_queue = -1;
 bool closed = false;
+bool exiting = false;
 
 define_handler(INIT_REPLY)
 {
@@ -55,6 +56,7 @@ define_handler(STOP)
 define_handler(CONNECT_REPLY)
 {
     other_queue = mq_open(msg->data.connect_reply.queue_id.code, O_WRONLY);
+    printf("%s\n",msg->data.connect_reply.queue_id.code);
     printf("[Client] Connected with target client through queue: %i\n", other_queue);
     return OK;
 }
@@ -80,6 +82,7 @@ void register_message_handler();
 
 void on_message_available(union sigval sv)
 {
+    if(exiting) return;
     (void) sv;
 
     register_message_handler();
@@ -115,6 +118,7 @@ void register_message_handler()
 
 void onexit()
 {
+    exiting = true;
     if(!closed)
     {
         send_message(STOP, {client_id}, server_queue);
@@ -218,6 +222,7 @@ int main()
             if(other_queue != -1)
             {
                 send_message(DISCONNECT, {client_id}, server_queue);
+                other_queue = -1;
             } else{
                 printf("[Client] You are not connected to anyone\n");
             }

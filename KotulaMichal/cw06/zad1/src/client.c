@@ -15,6 +15,7 @@ define_handler(INIT_REPLY)
 define_handler(STOP)
 {
     printf("[Client] Server stopped\n");
+    send_message(STOP_REPLY,{client_id}, server_queue);
     exit(0);
     return OK;
 }
@@ -182,6 +183,7 @@ int main()
             if(other_queue != -1)
             {
                 send_message(DISCONNECT, {client_id}, server_queue);
+                other_queue = -1;
             } else{
                 printf("[Client] You are not connected to anyone\n");
             }

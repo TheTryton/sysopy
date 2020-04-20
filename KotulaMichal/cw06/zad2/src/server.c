@@ -177,11 +177,11 @@ void onexit()
 {
     for(int i=0;i<MAX_CLIENTS_COUNT;i++)
     {
-        if(clients[i].queue)
+        if(clients[i].id)
         {
             send_message(STOP, { 0 }, clients[i].queue);
             message msg;
-            while(receive_message(clients[i].queue, msg))
+            while(receive_message(server_queue, msg))
             {
                 if(msg.mtype == STOP_REPLY)
                 {

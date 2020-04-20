@@ -1,3 +1,1 @@
-# operating_systems
-
-SysOpy
+# sysopy

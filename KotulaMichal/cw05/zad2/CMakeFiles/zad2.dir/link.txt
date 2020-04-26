@@ -1,1 +1,1 @@
-/usr/bin/cc    CMakeFiles/zad2.dir/src/main.c.o  -o bin/zad2 
+/usr/bin/cc -g   CMakeFiles/zad2.dir/src/main.c.o  -o bin/zad2 

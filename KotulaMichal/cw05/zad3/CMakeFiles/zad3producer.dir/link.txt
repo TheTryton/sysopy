@@ -1,1 +1,1 @@
-/usr/bin/cc    CMakeFiles/zad3producer.dir/src/producer.c.o  -o bin/zad3producer 
+/usr/bin/cc -g   CMakeFiles/zad3producer.dir/src/producer.c.o  -o bin/zad3producer 

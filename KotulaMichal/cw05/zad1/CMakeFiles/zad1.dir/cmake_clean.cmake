@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zad1.dir/src/main.c.o"
-  "bin/zad1.pdb"
   "bin/zad1"
+  "bin/zad1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

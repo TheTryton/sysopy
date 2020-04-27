@@ -9,6 +9,7 @@
 #include <stdlib.h>
 
 #include <time.h>
+#include <sys/time.h>
 #include <unistd.h>
 
 #define KEY_PATHNAME "/home/michal/"
@@ -155,11 +156,13 @@ int worker(int (*runner)())
 
 #define log(x, args...)\
   {\
+    struct timeval time_now;\
+    gettimeofday(&time_now, NULL);\
+    struct tm* time_str_tm = gmtime(&time_now.tv_sec);\
     time_t timer = time(NULL);\
-    struct tm* tm_info = localtime(&timer);\
-    char buffer[128];\
-    strftime(buffer, 26, "%Y-%m-%d %H:%M:%S", tm_info);\
-    printf("(%d %s) " x "\n", getpid(), buffer, args);\
+    printf("(%d %02i:%02i:%02i:%06li)" x "\n",\
+    getpid(), time_str_tm->tm_hour, time_str_tm->tm_min, time_str_tm->tm_sec, time_now.tv_usec,\
+    args);\
   }
 
 

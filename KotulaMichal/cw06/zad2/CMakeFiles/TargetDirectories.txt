@@ -1,0 +1,4 @@
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/CMakeFiles/rebuild_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/CMakeFiles/edit_cache.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/CMakeFiles/zad2client.dir
+/home/michal/Desktop/operating_systems/KotulaMichal/cw06/zad2/CMakeFiles/zad2server.dir

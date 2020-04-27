@@ -165,4 +165,13 @@ int worker(int (*runner)())
     return runner();
 }
 
+#define log(x, args...)\
+  {\
+    time_t timer = time(NULL);\
+    struct tm* tm_info = localtime(&timer);\
+    char buffer[128];\
+    strftime(buffer, 26, "%Y-%m-%d %H:%M:%S", tm_info);\
+    printf("(%d %s) " x "\n", getpid(), buffer, args);\
+  }
+
 

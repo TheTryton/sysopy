@@ -1,0 +1,69 @@
+./zad1 1 sign baboon.ascii.pgm out1sign
+Thread 0 took 739 us to compute histogram part.
+Whole process took 30155 us to compute histogram.
+./zad1 2 sign baboon.ascii.pgm out2sign
+Thread 0 took 1145 us to compute histogram part.
+Thread 1 took 513 us to compute histogram part.
+Whole process took 22786 us to compute histogram.
+./zad1 4 sign baboon.ascii.pgm out4sign
+Thread 0 took 665 us to compute histogram part.
+Thread 1 took 1267 us to compute histogram part.
+Thread 2 took 1508 us to compute histogram part.
+Thread 3 took 630 us to compute histogram part.
+Whole process took 20452 us to compute histogram.
+./zad1 8 sign baboon.ascii.pgm out8sign
+Thread 0 took 518 us to compute histogram part.
+Thread 1 took 664 us to compute histogram part.
+Thread 2 took 941 us to compute histogram part.
+Thread 3 took 1310 us to compute histogram part.
+Thread 4 took 1442 us to compute histogram part.
+Thread 5 took 1355 us to compute histogram part.
+Thread 6 took 1075 us to compute histogram part.
+Thread 7 took 478 us to compute histogram part.
+Whole process took 22372 us to compute histogram.
+./zad1 1 block baboon.ascii.pgm out1block
+Thread 0 took 750 us to compute histogram part.
+Whole process took 22478 us to compute histogram.
+./zad1 2 block baboon.ascii.pgm out2block
+Thread 0 took 344 us to compute histogram part.
+Thread 1 took 315 us to compute histogram part.
+Whole process took 19312 us to compute histogram.
+./zad1 4 block baboon.ascii.pgm out4block
+Thread 0 took 212 us to compute histogram part.
+Thread 1 took 172 us to compute histogram part.
+Thread 2 took 153 us to compute histogram part.
+Thread 3 took 169 us to compute histogram part.
+Whole process took 19373 us to compute histogram.
+./zad1 8 block baboon.ascii.pgm out8block
+Thread 0 took 79 us to compute histogram part.
+Thread 1 took 100 us to compute histogram part.
+Thread 2 took 77 us to compute histogram part.
+Thread 3 took 83 us to compute histogram part.
+Thread 4 took 91 us to compute histogram part.
+Thread 5 took 117 us to compute histogram part.
+Thread 6 took 92 us to compute histogram part.
+Thread 7 took 103 us to compute histogram part.
+Whole process took 20297 us to compute histogram.
+./zad1 1 interleaved baboon.ascii.pgm out1interleaved
+Thread 0 took 660 us to compute histogram part.
+Whole process took 20376 us to compute histogram.
+./zad1 2 interleaved baboon.ascii.pgm out2interleaved
+Thread 0 took 313 us to compute histogram part.
+Thread 1 took 312 us to compute histogram part.
+Whole process took 19245 us to compute histogram.
+./zad1 4 interleaved baboon.ascii.pgm out4interleaved
+Thread 0 took 535 us to compute histogram part.
+Thread 1 took 172 us to compute histogram part.
+Thread 2 took 210 us to compute histogram part.
+Thread 3 took 167 us to compute histogram part.
+Whole process took 20022 us to compute histogram.
+./zad1 8 interleaved baboon.ascii.pgm out8interleaved
+Thread 0 took 289 us to compute histogram part.
+Thread 1 took 121 us to compute histogram part.
+Thread 2 took 112 us to compute histogram part.
+Thread 3 took 246 us to compute histogram part.
+Thread 4 took 126 us to compute histogram part.
+Thread 5 took 186 us to compute histogram part.
+Thread 6 took 116 us to compute histogram part.
+Thread 7 took 136 us to compute histogram part.
+Whole process took 19491 us to compute histogram.

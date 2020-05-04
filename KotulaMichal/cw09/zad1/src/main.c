@@ -259,86 +259,79 @@ bool wq_available(void** args, size_t argc)
     return ((waitable_queue*)args[0])->size > 0;
 }
 
-client_id wq_get(waitable_queue* wq, size_t* remaining_clients)
+client_id wq_get(waitable_queue* wq, bool dolock)
 {
-    mlock(&wq->m);
+    if(dolock)
+    {
+        mlock(&wq->m);
+    }
     void* args[1] = {wq};
     cvwait(&wq->cv, &wq->m, wq_available, args, 1);
     client_id id = wq->q[wq->pop_index++];
     wq->pop_index = wq->pop_index % wq->capacity;
     wq->size--;
-    *remaining_clients = wq->size;
     cvnotify_all(&wq->cv);
-    munlock(&wq->m);
+    if(dolock)
+    {
+        munlock(&wq->m);
+    }
     return id;
 }
 
-bool wq_tryget(waitable_queue* wq, client_id* front, size_t* remaining_clients)
+bool wq_tryget(waitable_queue* wq, client_id* front, bool dolock)
 {
-    mlock(&wq->m);
+    if(dolock)
+    {
+        mlock(&wq->m);
+    }
     if(wq->size > 0)
     {
         *front = wq->q[wq->pop_index++];
         wq->pop_index = wq->pop_index % wq->capacity;
         wq->size--;
-        *remaining_clients = wq->size;
-        cvnotify_all(&wq->cv);
-        munlock(&wq->m);
+        if(dolock) {
+            cvnotify_all(&wq->cv);
+            munlock(&wq->m);
+        }
         return true;
     } else {
-        munlock(&wq->m);
+        if(dolock)
+        {
+            munlock(&wq->m);
+        }
         return false;
     }
 }
 
-bool wq_hasspace(void** args, size_t argc)
+bool wq_trypush(waitable_queue* wq, client_id id, bool dolock)
 {
-    return ((waitable_queue*)args[0])->size != ((waitable_queue*)args[0])->capacity;
-}
-
-void wq_push(waitable_queue* wq, client_id id)
-{
-    mlock(&wq->m);
-    void* args[1] = {wq};
-    cvwait(&wq->cv, &wq->m, wq_hasspace, args, 1);
-    wq->q[wq->push_index++] = id;
-    wq->push_index = wq->push_index % wq->capacity;
-    wq->size++;
-    cvnotify_all(&wq->cv);
-    munlock(&wq->m);
-}
-
-bool wq_trypush(waitable_queue* wq, client_id id, size_t* remaining_capacity)
-{
-    mlock(&wq->m);
+    if(dolock)
+    {
+        mlock(&wq->m);
+    }
     if(wq->size != wq->capacity)
     {
         wq->q[wq->push_index++] = id;
         wq->push_index = wq->push_index % wq->capacity;
         wq->size++;
-        *remaining_capacity = wq->capacity - wq->size;
-        cvnotify_all(&wq->cv);
-        munlock(&wq->m);
+        if(dolock)
+        {
+            cvnotify_all(&wq->cv);
+            munlock(&wq->m);
+        }
         return true;
     } else {
-        munlock(&wq->m);
+        if(dolock)
+        {
+            munlock(&wq->m);
+        }
         return false;
     }
 }
 
 waitable_queue barber_queue;
-mutex finish_mutex;
-mutex sleeping_mutex;
 bool is_sleeping = false;
 bool no_remaining_clients = false;
-
-bool finish_work()
-{
-    mlock(&finish_mutex);
-    bool result = no_remaining_clients;
-    munlock(&finish_mutex);
-    return no_remaining_clients;
-}
 
 int barber_main(void** args, size_t argc)
 {
@@ -347,23 +340,29 @@ int barber_main(void** args, size_t argc)
         client_id processed_client;
         size_t clients_waiting;
 
-        if(!wq_tryget(&barber_queue,&processed_client, &clients_waiting))
+        mlock(&barber_queue.m);
+        if(!wq_tryget(&barber_queue,&processed_client, false))
         {
-            if(finish_work())
+            if(no_remaining_clients)
             {
+                munlock(&barber_queue.m);
                 break;
             }
 
-            mlock(&sleeping_mutex);
             printf("Golibroda: ide spac.\n");
             is_sleeping=true;
-            munlock(&sleeping_mutex);
 
-            processed_client = wq_get(&barber_queue, &clients_waiting);
+            processed_client = wq_get(&barber_queue, false);
 
-            mlock(&sleeping_mutex);
             is_sleeping=false;
-            munlock(&sleeping_mutex);
+
+            clients_waiting = barber_queue.size;
+
+            munlock(&barber_queue.m);
+        } else
+        {
+            clients_waiting = barber_queue.size;
+            munlock(&barber_queue.m);
         }
 
         printf("Golibroda: czeka %lu klientow, gole klienta %lu.\n", clients_waiting, processed_client);
@@ -382,24 +381,29 @@ int client_main(void** args, size_t argc) {
     client_id id = *((client_id *) args[0]);
     free(args[0]);
 
-    size_t remaining_capacity;
-
-    while (!wq_trypush(&barber_queue, id, &remaining_capacity)) {
+    mlock(&barber_queue.m);
+    while (!wq_trypush(&barber_queue, id, false)) {
+        munlock(&barber_queue.m);
         printf("Zajete; %lu.\n", id);
         size_t msec_sleep = rand() % 2000 + 1000;
         struct timespec ts;
         ts.tv_nsec = msec_sleep % 1000 * 1000000;
         ts.tv_sec = msec_sleep / 1000;
         nanosleep(&ts, &ts);
+        mlock(&barber_queue.m);
     }
 
-    mlock(&sleeping_mutex);
+    size_t remaining_capacity = barber_queue.capacity - barber_queue.size;
+
     if (is_sleeping) {
         printf("Budze golibrode; %lu.\n", id);
     } else {
         printf("Poczekalnia, wolne miejsca: %lu; %lu.\n", remaining_capacity, id);
     }
-    munlock(&sleeping_mutex);
+
+    cvnotify_one(&barber_queue.cv);
+
+    munlock(&barber_queue.m);
 
     return 0;
 }
@@ -416,8 +420,6 @@ int main(int argc, char** argv) {
     size_t chairs_count = strtoll(argv[1], NULL, 10);
     size_t clients_count = strtoll(argv[2], NULL, 10);
 
-    mcreate(&sleeping_mutex);
-    mcreate(&finish_mutex);
     wq_create(&barber_queue, chairs_count);
 
     thread clients[clients_count];
@@ -439,9 +441,9 @@ int main(int argc, char** argv) {
         nanosleep(&ts, &ts);
     }
 
-    mlock(&finish_mutex);
+    mlock(&barber_queue.m);
     no_remaining_clients = true;
-    munlock(&finish_mutex);
+    munlock(&barber_queue.m);
 
     for(size_t i=0;i<clients_count;i++) {
         tjoin(&clients[i], NULL);
@@ -450,8 +452,6 @@ int main(int argc, char** argv) {
     tjoin(&barber, NULL);
 
     wq_destroy(&barber_queue);
-    mdestroy(&finish_mutex);
-    mdestroy(&sleeping_mutex);
 
     return 0;
 }

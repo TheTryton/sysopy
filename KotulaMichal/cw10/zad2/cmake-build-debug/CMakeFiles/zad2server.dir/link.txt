@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/zad2server.dir/src/server.c.o  -o ../bin/zad2server  -lpthread 

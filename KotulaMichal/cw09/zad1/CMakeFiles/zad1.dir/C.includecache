@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michal/Desktop/operating_systems/KotulaMichal/cw09/zad1/src/main.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stdbool.h
+-
+pthread.h
+-
+time.h
+-
+sys/errno.h
+-
+
